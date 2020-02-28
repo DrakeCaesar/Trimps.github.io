@@ -1,0 +1,60 @@
+#queueContainer {
+  border: none;
+  background: $gray-800;
+  box-shadow: $shadow-xl;
+  padding: .5rem $text-sm;
+  border-radius: $text-xs;
+}
+
+#noQueue {
+  font-size: $text-base;
+  color: $gray-400;
+  letter-spacing: 0.2pt;
+  padding: 0;
+}
+
+#queueItemsHere {
+  > :nth-child(1) {
+    border: none;
+    margin-left: 0;
+    color: $blue-100;
+    background: $blue-700;
+    font-weight: $weight-normal;
+  }
+}
+
+.queueItem {
+  border: none;
+  text-transform: uppercase;
+  color: $gray-300;
+  background: $gray-700;
+  margin-right: 2px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: $text-sm;
+  letter-spacing: 0.5pt;
+  font-weight: $weight-light;
+
+  #queueTimeRemaining {
+    font-size: $text-xs;
+  }
+}
+
+#queueRow {
+  text-align: left;
+}
+
+.lowPad {
+  padding: 0 15px;
+}
+
+#foremenCount,
+#buildSpeed {
+  font-size: $text-base;
+  color: $gray-200;
+  font-weight: $weight-semibold;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.5pt;
+  margin: 0;
+}

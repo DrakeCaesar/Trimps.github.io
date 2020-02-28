@@ -1,0 +1,201 @@
+#settingsRow {
+  background: $gray-900;
+  color: $gray-400;
+}
+
+#settingsTable {
+  > tbody {
+    > tr {
+      > td {
+        border-top: none;
+        border-bottom: none;
+        border-width: 2px;
+        border-color: $gray-900;
+      }
+    }
+  }
+  .btn {
+    border-radius: 8px 8px 0 0;
+    font-size: $text-xs;
+    text-transform: uppercase;
+    font-weight: $weight-semibold;
+    letter-spacing: 0.3pt;
+    &:hover {
+      color: $gray-200;
+    }
+    &-info {
+      background-color: $gray-800;
+      color: $gray-300;
+      &:hover {
+        background-color: $gray-700;
+      }
+    }
+    &-success {
+      background-color: $green-700;
+      color: $green-100;
+      &:hover {
+        background-color: $green-600;
+      }
+    }
+    &.tealColor {
+      background-color: $indigo-700 !important;
+      color: $indigo-100;
+      &:hover {
+        background-color: $indigo-600 !important;
+      }
+    }
+    &-default {
+      background-color: $gray-400;
+      color: $gray-900;
+      &:hover {
+        background-color: $gray-500;
+        color: $gray-900;
+      }
+    }
+  }
+  #portalTimer {
+    border-radius: 8px 8px 0 0;
+    &.timerPaused {
+      color: $red-700;
+    }
+  }
+}
+
+@keyframes blinker { to { background-color: $red-700; color: $red-100; } }
+
+.autosaving {
+  background-color: $green-600;
+  text-transform: none;
+}
+
+#settingsHere {
+  margin-bottom: 0;
+}
+#settingSearchResults {
+  min-height: 150px;
+  height: auto;
+  padding: 1vw 0;
+  background: $gray-800;
+}
+.optionContainer {
+  margin-bottom: 20px;
+}
+
+#allSettingsHere {
+  padding: 1vw 0;
+  background: $gray-800;
+}
+
+#searchSettingsTitle {
+  font-size: $text-base;
+  display: inline-block;
+  width: 40%;
+}
+
+#searchSettings {
+  background: $gray-400;
+  border-radius: 4px;
+  border: none;
+  padding: 4px 8px;
+  color: $gray-900;
+  &:focus {
+    outline: none;
+    box-shadow: $shadow-focus;
+  }
+}
+
+.settingsBtn {
+  color: $gray-100;
+  text-transform: uppercase;
+  letter-spacing: 0.3pt;
+  font-weight: $weight-semibold;
+  font-size: $text-base;
+  border: none;
+  border-radius: 4px;
+  background: $gray-700;
+  padding: 8px 8px;
+  &.tealColor {
+    background-color: $gray-700 !important;
+    &:hover {
+      background-color: $gray-600 !important;
+    }
+  }
+}
+
+.settingBtnfalse, 
+.settingBtn0 {
+  background-color: $red-800;
+  &:hover {
+    background-color: $red-700;
+  }
+}
+.settingBtntrue, 
+.settingBtn1 {
+  background: $green-600;
+  &:hover {
+    background: $green-500;
+  }
+}
+
+.settingBtn2 {
+  background-color: $yellow-700;
+  &:hover {
+    background-color: $yellow-600;
+    color: $orange-100;
+  }
+}
+.settingBtn3 {
+  background-color: $indigo-700;
+  &:hover {
+    background-color: $indigo-600;
+  }
+}
+
+.settingBtn4 {
+  background-color: $orange-500;
+  &:hover {
+    background-color: $orange-600;
+  }
+}
+.settingBtn5 {
+  background-color: $teal-600;
+  &:hover {
+    background-color: $teal-700;
+  }
+}
+
+#toggleusePlayFab.settingBtn0, 
+.pFabEnable {
+  background-color: $indigo-700 !important;
+  &:hover {
+    background-color: $indigo-800 !important;
+  }
+}
+
+#allSettings {
+  margin-top: 2vw;
+}
+
+#settingTitleBar {
+  margin-bottom: 0;
+}
+
+.settingTab {
+  a {
+    font-size: $text-sm !important;
+  }
+  &.tabNotSelected {
+    background: $gray-900;
+    &:hover {
+      a {
+        color: $gray-100 !important;
+      }
+    }
+  }
+  &.tabSelected {
+    background: $gray-800;
+    a {
+      color: $gray-100 !important;
+    }
+  }
+}

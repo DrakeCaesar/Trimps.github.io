@@ -5969,7 +5969,7 @@ function toggleSetting(setting, elem, fromPortal, updateOnly, backwards, fromHot
 
 	var trimpAchievementHelpOn = false;
 	function toggleAchievementHelp(){
-		document.getElementById("achievementHelp").style.color = (trimpAchievementHelpOn) ? "#202080" : "#6060C0";
+		document.getElementById("achievementHelp").classList.toggle('active');
 		document.getElementById("achievementHeader").style.display = (trimpAchievementHelpOn) ? "block" : "none";
 		document.getElementById("achievementHelpContainer").style.display = (trimpAchievementHelpOn) ? "none" : "block";
 		trimpAchievementHelpOn = !trimpAchievementHelpOn;

@@ -1,0 +1,65 @@
+.workBtn {
+  background-color: $gray-700;
+  border: none;
+  font-size: $text-sm;
+  text-transform: uppercase;
+  letter-spacing: 0.5pt;
+  padding: 8px 8px;
+  box-shadow: $shadow;
+  border-radius: 4px;
+}
+
+.workColorOn {
+  background-color: $blue-700;
+  box-shadow: $shadow-md;
+  color: $blue-100;
+}
+
+.workColorTurkimp {
+  background-color: $yellow-800;
+  color: $orange-100;
+}
+
+#scienceCollectBtn {
+  font-size: $text-sm;
+}
+
+.alert {
+  margin-right: 4px;
+}
+
+.autoUpgradeBtn {
+  border: none;
+  text-align: center;
+  font-size: $text-xs;
+  text-transform: uppercase;
+  padding: 6px 8px;
+  margin-top: 3px;
+  border-radius: 4px;
+
+  &.colorSuccess {
+    background: $green-800;
+    color: $green-100;
+    &:hover {
+      background: $green-800;
+    }
+  }
+  &.colorDanger {
+    background: $gray-700;
+    color: $gray-300;
+    &:hover {
+      background: $gray-700;
+    }
+  }
+}
+
+#selectedMapContainer {
+  .infoColor{
+    background-color: $blue-600;
+    color: $blue-100;
+  }
+  .dangerColor {
+    background-color: $red-900;
+    color: $red-100;
+  }
+}

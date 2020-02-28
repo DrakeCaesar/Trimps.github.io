@@ -1,0 +1,53 @@
+#trimpsColumn {
+  .playerGather {
+    text-align: center;
+    border-bottom: none;
+    .ownedArea {
+      margin-top: 8px;
+    }
+    .progress {
+      height: 24px;
+    }
+    #trimpsTimeToFill {
+      margin: 0;
+      line-height: 24px;
+      color: $gray-900;
+    }
+    #unempHide,
+    #empHide {
+      font-size: $text-base;
+      color: $gray-300;
+      text-transform: uppercase;
+      letter-spacing: 0.5pt;
+    }
+    #unempHide {
+      margin-top: 8px;
+    }
+    #empHide {
+      margin-bottom: 8px;
+    }
+
+    #trimpsPs {
+      color: $gray-300;
+      margin: 4px 0;
+      text-transform: none;
+      display: inline-block;
+    }
+    #trapArea {
+      border: none;
+      border-top: 1px solid $gray-700;
+      width: 100%;
+      padding: 0;
+      padding-top: $text-base;
+      margin: 0;
+      margin-top: 8px;
+    }
+  }
+}
+
+#turkimpBuff {
+  background: $yellow-800;
+  color: $orange-300;
+  border-radius: 4px;
+  box-shadow: $shadow;
+}

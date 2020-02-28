@@ -1,0 +1,250 @@
+#portalWrapper {
+  color: $gray-100;
+  text-align: left;
+  .btn-primary {
+    color: $blue-100;
+    background-color: $blue-600;
+    border-color: $blue-600;
+    &:hover {
+      background-color: $blue-700;
+      border-color: $blue-700;
+    }
+  }
+  .btn-danger {
+    color: $blue-100;
+    background-color: $red-600;
+    border-color: $red-600;
+    &:hover {
+      background-color: $red-700;
+      border-color: $red-700;
+    }
+  }
+  .btn-warning {
+    color: $yellow-100;
+    background-color: $yellow-600;
+    border-color: $yellow-600;
+    &:hover {
+      background-color: $yellow-700;
+      border-color: $yellow-700;
+    }
+  }
+}
+
+.portalMk1 {
+  background: $green-800;
+  color: $green-100 !important;
+}
+
+.portalMkPreview {
+  background: darken($gray-900, 10%);
+}
+
+#viewChallenge {
+  text-align: center;
+}
+
+#viewChallengeText {
+  text-align: left;
+  display: block;
+}
+
+#titleRow {
+  height: 7vw;
+  display: flex;
+  margin-bottom: 1.5vw;
+}
+
+.titleCol {
+  display: block;
+  padding: 0 15px;
+  position: relative;
+  top: initial;
+}
+
+#titleCol1 {
+  width: 58.33333333%;
+  left: initial;
+}
+
+#titleCol2 {
+  width: 41.66666667%;
+  left: initial;
+  position: relative;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  > div {
+    width: 60%;
+    > div {
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      letter-spacing: 0.3pt;
+      span {
+        font-weight: $weight-medium;
+        text-transform: none;
+      }
+    }
+  }
+}
+
+#portalTitle {
+  font-size: $text-6xl;
+}
+
+#portalHelium {
+  font-size: $text-3xl;
+  line-height: $text-4xl;
+}
+
+#portalTotalPortals, 
+#portalTotalSpent, 
+#portalTotalHelium {
+  font-size: $text-xl;
+  line-height: $text-2xl;
+}
+
+#portalPresets,
+#portalTabs {
+  background: transparent;
+  border: none;
+}
+
+#portalPresetsTabs,
+#portalTabs {
+  &.nav-tabs.nav-justified {
+    > li {
+      > a {
+        margin: 2px;
+        border-radius: 4px;
+      }
+    }
+  }
+  .tabNotSelected {
+    background: transparent;
+    a {
+      background: $gray-800;
+      color: $gray-100;
+    }
+  }
+  .tabSelected {
+    background: transparent;
+    a {
+      background: $blue-600;
+      color: $blue-100;
+    }
+  }
+  .tabNotEnabled {
+    background: transparent;
+    a {
+      background: $gray-900;
+      color: $gray-600;
+    }
+  }
+  #ptabRemove {
+    background: transparent !important;
+    a {
+      // border-radius: 4px;
+      background: $red-700;
+      color: $red-100 !important;
+    }
+  }
+}
+
+#portalUpgradesHere {
+  display: block;
+  text-align: center;
+}
+
+.portalThing {
+  font-size: $text-base;
+  .thingName {
+    font-size: $text-sm;
+  }
+  &.perkColorOn {
+    background-color: $blue-800;
+  }
+  &.perkColorOff, 
+  &.colorBuyOff {
+    background-color: $gray-900;
+    color: $gray-600;
+  }
+  &.perkColorMaxed {
+    background-color: $indigo-800;
+  }
+}
+
+#challenges {
+  margin: 0;
+}
+
+.challengeTitle {
+  text-align: left;
+  font-size: $text-lg;
+  font-weight: $weight-semibold;
+  letter-spacing: 0.5pt;
+  text-transform: uppercase;
+}
+
+#portalStory,
+#challengeDescriptionPre {
+  font-size: $text-base;
+  font-weight: $weight-light;
+}
+
+#specificChallengeDescription {
+  min-height: 11vw;
+  background: $gray-200;
+  color: $gray-800;
+  box-shadow: $shadow-lg;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: $text-sm;
+}
+
+#challengesHere {
+  text-align: center;
+}
+
+.challengeThing {
+  height: auto;
+  font-size: $text-base;
+  background-color: $blue-700;
+  padding: 4px 4px 2px;
+  border-bottom: 4px solid $blue-700;
+  &:hover {
+    background-color: $blue-600;
+    border-color: $blue-600;
+  }
+}
+
+.nextChallenge {
+  background-color: $gray-900 !important;
+  border-color: $gray-900;
+  color: $gray-600;
+  &:hover {
+    border-color: $gray-900;
+  }
+}
+
+.finishedChallenge {
+  background-color: $gray-600;
+  border-color: $gray-600;
+  color: $gray-900;
+}
+
+.cBorderOn,
+.cBorderOn:hover {
+  box-shadow: none;
+  border-color: $blue-200;
+}
+
+#portalBtnContainer {
+  text-align: center;
+  .inPortalBtn {
+    text-transform: uppercase;
+    font-size: $text-xl !important;
+    letter-spacing: 0.5pt;
+    font-weight: $weight-semibold;
+  }
+}

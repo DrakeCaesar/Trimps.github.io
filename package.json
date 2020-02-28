@@ -1,0 +1,17 @@
+{
+  "name": "trimps",
+  "version": "5.2.4",
+  "description": "Styling with tailwind for the game Trimps",
+  "main": "index.html",
+  "repository": "https://github.com/StefGeraets/Trimps.github.io.git",
+  "author": "Stef Geraets <stef@getnoticed.nl>",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "build": "node-sass --include-path scss scss/main.scss css/modern.css",
+    "watch": "nodemon -e scss -x \"yarn build\""
+  }
+}

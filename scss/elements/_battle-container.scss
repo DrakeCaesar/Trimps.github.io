@@ -1,0 +1,129 @@
+#battleContainer {
+  border: none;
+  background: $gray-800;
+  border-radius: $text-xs;
+  color: $gray-100;
+}
+
+.battleStatsTitle {
+  font-size: $text-base;
+}
+
+#realTrimpName,
+#badGuyName {
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  letter-spacing: 0.3pt;
+  display: flex;
+  align-items: center;
+}
+
+#damageDiv,
+#badGuyRow {
+  font-weight: $weight-light;
+}
+
+#lootBdBtn {
+  color: $blue-700;
+  text-shadow: none;
+  &:hover {
+    color: $blue-600;
+    text-shadow: none;
+  }
+}
+
+#grid, 
+#mapGrid {
+  background: $gray-700;
+}
+
+.battleCell {
+  border: 1px solid $gray-800;
+}
+
+.cellColorBeaten {
+  background: $green-500 !important;
+  color: $gray-900 !important;
+}
+
+// .cellColorCurrent {
+//   background: $yellow-400 !important;
+//   color: $gray-900 !important;
+// }
+
+#battleSideTitle {
+  background: $gray-900;
+  color: $gray-300;
+  text-transform: uppercase;
+  font-size: $text-base;
+  font-weight: $weight-semibold;
+  letter-spacing: 0.3pt;
+  border-radius: 4px;
+}
+
+.battleSideBtnContainer {
+  .fightBtn {
+    font-size: $text-base;
+    color: $gray-900;
+    text-transform: uppercase;
+    font-size: $text-sm !important;
+    font-weight: $weight-semibold;
+    letter-spacing: 0.3pt;
+    border-radius: 4px;
+    padding: 6px 8px;
+    border: none;
+  }
+  .btn-default {
+    background: $gray-200;
+  }
+  .btn-primary {
+    background: $blue-600;
+    color: $blue-100;
+  }
+  .btn-danger {
+    background: $red-600;
+    color: $red-100;
+  }
+  .btn-success {
+    background: $green-600;
+    color: $green-100;
+  }
+  .btn-warning {
+    background: $orange-600;
+    color: $orange-100;
+  }
+  .btn-info {
+    background: $indigo-600;
+    color: $indigo-100;
+  }
+  #boneBtnText {
+    font-size: $text-sm;
+  }
+  #mapsBtn {
+    height: 32px;
+    div {
+      &:first-child {
+        padding: 6px 8px;
+      }
+      &:nth-child(2) {
+        padding: 6px 8px;
+        height: auto;
+        background: $orange-900;
+        color: $orange-200;
+      }
+    }
+  }
+  .shrinkBtnText {
+    div:first-child {
+      margin: 0 !important;
+      font-size: $text-xs !important;
+    }
+  }
+}
+
+.badBadge {
+  font-size: $text-2xs;
+  padding-left: 10px;
+  background-color: $gray-700;
+  margin-left: 10px;
+}

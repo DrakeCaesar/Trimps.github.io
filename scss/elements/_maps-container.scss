@@ -1,0 +1,166 @@
+#preMaps {
+  margin: 4px;
+}
+#mapsCreateRow {
+  background: $gray-700;
+  color: $gray-100;
+  padding: 8px 8px 12px !important;
+  border-radius: 8px;
+  text-align: left;
+  font-size: $text-base;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+}
+
+#advMapsRow {
+  margin-top: -5px;
+}
+
+#advMapsControlBtns {
+  position: relative;
+  top: 0;
+  left: 0;
+  color: $gray-400;
+  margin-bottom: 2px;
+  text-align: right;
+}
+#advMapsControlBtns .icomoon {
+  padding: 0 2px;
+}
+.mapPreset {
+  color: $gray-400;
+  padding: 2px 4px;
+  border-radius: 2px;
+  &:hover {
+    color: $gray-100;
+  }
+}
+.presetSelectionOn {
+  color: $gray-100;
+  background: $gray-600;
+  text-decoration: none;
+  text-shadow: none;
+}
+.iconStateBad {
+  color: $red-600;
+}
+
+#mapCreateBtn {
+  background: $blue-600;
+}
+
+#mapLevelContainer {
+  padding-top: 2px;
+  padding-left: 0;
+}
+#mapCostContainer {
+  padding-top: 7px;
+}
+
+#mapLevelContainer {
+  .incrementBtn:first-child {
+    border-radius: 4px 0 0 4px;
+  }
+  .incrementBtn:last-child {
+    border-radius: 0 4px 4px 0;
+  }
+}
+.incrementBtn {
+  background: $gray-400;
+  color: $gray-900;
+  border: none;
+}
+#mapLevelInput {
+  border: none;
+  color: $gray-900;
+  background: $gray-300;
+  text-align: center;
+  font-size: $text-base;
+  padding: 3px 0;
+  &:focus {
+    outline: none;
+  }
+}
+
+#advMapsRow, 
+#advMapsRow2 {
+  background: $gray-700;
+  border-radius: 0 0 8px 8px;
+  font-size: $text-sm;
+  padding-bottom: 8px !important;
+}
+
+.advMapsTitle {
+  font-size: $text-sm;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  color: $gray-200;
+  width: 100%;
+  letter-spacing: 0.3pt;
+}
+
+.advSelect {
+  color: $gray-200;
+}
+
+#selectedMapContainer {
+  text-align: left;
+  margin-top: 5px;
+  font-size: $text-base;
+}
+
+#selectedMapName {
+  text-decoration: none;
+  font-size: $text-lg;
+  text-transform: uppercase;
+  letter-spacing: 0.5pt;
+  font-weight: $weight-semibold;
+  + br {
+    display: none;
+  }
+}
+
+.mapStatsTitle {
+  font-size: $text-sm;
+  line-height: 22px;
+  color: $gray-300;
+}
+
+.mapStatsValue {
+  text-transform: uppercase;
+  color: $gray-100;
+  letter-spacing: 0.5pt;
+  font-weight: $weight-semibold;
+}
+
+#selectMapBtns {
+  text-align: center;
+  margin-top: 12px;
+  font-weight: $weight-semibold;
+}
+
+#mapsHere, 
+#voidMapsHere {
+  margin-top: 16px;
+  .thing {
+    background: $gray-700;
+  }
+  .mapElementSelected {
+    background: $gray-600;
+    box-shadow: $shadow-md;
+  }
+  .noRecycle {
+    background: $green-800;
+    &.mapElementSelected {
+      background: $green-600;
+    }
+  }
+  .noRecycleDone {
+    background: $red-800;
+    &.mapElementSelected {
+      background: $red-600;
+    }
+  }
+}
+
+

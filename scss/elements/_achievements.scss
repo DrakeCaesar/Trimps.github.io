@@ -1,0 +1,162 @@
+#achievementPopup,
+#achievementHover {
+  border: none;
+  box-shadow: $shadow-md;
+  background: $gray-200;
+  color: $gray-800;
+  border-radius: $text-sm;
+  .row {
+    .col-xs-8 {
+      text-align: left;
+    }
+  }
+}
+
+.achievementBtnGo {
+  color: $green-800;
+}
+.achievementBtnClose {
+  color: $red-900;
+}
+
+#achievementWrapper {
+  background: $gray-900;
+}
+
+#achievementsHere {
+  background: $gray-900;
+}
+
+.achievementsContainer {
+  display: flex;
+}
+
+.achievementTitle {
+  background: $gray-800;
+  border-radius: 8px;
+  color: $gray-200;
+  text-transform: uppercase;
+  letter-spacing: 0.5pt;
+  border-color: $gray-800;
+  font-size: $text-base;
+  font-weight: $weight-semibold;
+  line-height: 1.95vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievementContainer {
+  border-radius: 0 0 4px 4px;
+  border-width: 0;
+  border-top-width: 8px;
+  font-size: $text-lg;
+  line-height: 1.65vw;
+}
+
+.achieveColorGreen {
+  background-color: $green-600;
+}
+.achieveColorYellow {
+  background-color: $yellow-500;
+  background: repeating-linear-gradient(
+				45deg,
+				$yellow-500,
+				$yellow-500 10px,
+				$yellow-600 10px,
+				$yellow-600 20px
+	)
+}
+.achieveColorRed {
+  background-color: $red-700;
+  background: repeating-linear-gradient(
+		45deg,
+		$red-700,
+		$red-700 10px,
+		$red-800 10px,
+		$red-800 20px
+	)
+}
+.achieveColorGrey {
+  background-color: $gray-700;
+}
+
+#achievementPopupIconContainer,
+#achievementHoverIconContainer {
+  padding: 12px 15px;
+}
+
+#achievementPopupTitle,
+#achievementHoverTitle {
+  font-weight: $weight-semibold;
+  text-transform: uppercase;
+  letter-spacing: 0.7pt;
+  font-size: $text-2xl;
+}
+
+#achievementPopupDescription, 
+#achievementHoverDescription {
+  font-size: $text-lg;
+  color: $gray-700;
+  span {
+    font-size: $text-lg !important;
+  }
+}
+
+#achievementHoverProgress {
+  font-size: $text-base;
+  text-transform: uppercase;
+  letter-spacing: 0.3pt;
+  color: $gray-800;
+}
+
+#achievementPopupReward,
+#achievementHoverReward {
+  color: $gray-800;
+  font-size: $text-xl;
+  margin-top: 8px;
+  b {
+    text-transform: uppercase;
+    font-weight: $weight-semibold;
+    letter-spacing: 0.5pt;
+    font-size: $text-lg;
+  }
+}
+
+.achievementMainTitle {
+  font-size: $text-3xl;
+  text-transform: uppercase;
+  letter-spacing: 0.7pt;
+  font-weight: $weight-semibold;
+  color: $gray-100;
+}
+
+.achievementTotals {
+  font-size: $text-lg;
+  color: $gray-300;
+}
+
+#achievementTotalPercent {
+  font-weight: $weight-semibold;
+  color: $gray-100;
+}
+
+#achievementHelpContainer {
+  font-size: $text-xl;
+  color: $gray-300;
+}
+
+#achievementHelp {
+  color: $blue-800;
+  &.active {
+    color: $blue-700;
+  }
+}
+
+#achievementMainClose, 
+#achievementClose2 {
+  color: $red-800;
+  &:hover {
+    color: $red-700;
+  }
+}

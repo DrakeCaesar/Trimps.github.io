@@ -1,0 +1,51 @@
+#logContainer {
+  border: none;
+  background: $gray-800;
+  border-radius: $text-xs;
+  overflow: hidden;
+}
+
+#logBtnGroup {
+  div {
+    button {
+      font-size: $text-xs;
+      text-transform: uppercase;
+      letter-spacing: 0.9pt;
+      font-weight: $weight-semibold;
+      background: $gray-700;
+      color: $gray-400;
+      border: none;
+      border-right: 1px solid $gray-800;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .btn-success {
+    color: $green-100;
+    background-color: $green-600;
+  }
+  .btn-default {
+    color: $gray-900;
+    background-color: $gray-300;
+  }
+}
+
+.message {
+  font-size: $text-base;
+  color: $gray-200;
+}
+
+.StoryMessage {
+  color: $blue-400;
+}
+
+.NoticeMessage {
+  background: $gray-900;
+}
+
+.turkimp {
+  background: $yellow-800;
+  color: $orange-300;
+}
+

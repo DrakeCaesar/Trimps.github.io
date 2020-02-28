@@ -1,0 +1,157 @@
+#tooltipDiv, 
+#tooltipDiv2 {
+  border: none;
+  border-radius: $text-sm;
+  background-color: $gray-200;
+  box-shadow: $shadow-2xl;
+  padding: 0;
+  overflow: hidden;
+
+  hr {
+    display: none;
+  }
+
+  .green {
+    color: $green-700;
+  }
+  .red {
+    color: $red-600;
+  }
+  .orange {
+    color: $orange-600;
+  }
+
+  input,
+  textarea {
+    background: $gray-400;
+    border-radius: 4px;
+    border: none;
+    padding: 4px 8px;
+    color: $gray-900;
+    &:focus {
+      outline: none;
+      box-shadow: $shadow-focus;
+    }
+  }
+}
+
+#tipTitle,
+#tipTitle2 {
+  font-size: $text-lg;
+  font-weight: $weight-semibold;
+  color: $gray-800;
+  text-transform: uppercase;
+  letter-spacing: 0.9pt;
+  padding: 10px 16px;
+  text-align: left;
+  background: $gray-100;
+}
+
+#tipText,
+#tipText2 {
+  padding: 16px;
+}
+
+#tipCost,
+#tipCost2 {
+  text-align: left;
+  background: $gray-100;
+  padding: 10px 16px;
+  .btn {
+    font-size: $text-xs;
+    letter-spacing: 0.5pt;
+    font-weight: $weight-medium;
+    line-height: $text-lg;
+    text-transform: uppercase;
+    border: none;
+    margin-right: 8px;
+  }
+  .btn-info {
+    color: $green-100;
+    background-color: $green-600;
+  }
+  .btn-danger {
+    color: $gray-100;
+    background: $gray-600;
+  }
+  .btn-success {
+    color: $blue-100;
+    background-color: $blue-600;
+  }
+}
+
+#messageConfigMessage {
+  font-size: $text-base;
+}
+
+.messageConfigTitle {
+  font-size: $text-lg;
+  font-weight: $weight-semibold;
+  text-transform: uppercase;
+  letter-spacing: 0.5pt;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.messageConfigContainer {
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.messageConfigCheckbox {
+  font-size: $text-base;
+  color: $gray-700;
+  &.icon-checkbox-checked {
+    color: $green-500;
+  }
+}
+
+.messageNameHolder {
+  font-size: $text-base;
+}
+
+.bdTable,
+.bdTableSm {
+  font-size: $text-base;
+  .bdTitle {
+    text-transform: uppercase;
+    font-size: $text-sm;
+    letter-spacing: 0.5pt;
+    text-decoration: none;
+    text-align: left;
+  }
+  .bdZoneTitle {
+    text-align: center;
+  }
+  > tbody {
+    > tr {
+      > td {
+        border: none;
+        border-right: 1px solid $gray-300;
+        border-bottom: 1px solid $gray-300;
+        &:last-child {
+          border-right: none;
+        }
+      }
+      &:last-child {
+        > td {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+.bdTableSm {
+  > tbody {
+    > tr {
+      &:first-child {
+        text-transform: uppercase;
+        font-size: $text-sm;
+        letter-spacing: 0.5pt;
+        font-weight: $weight-semibold;
+      }
+    }
+  }
+}
+

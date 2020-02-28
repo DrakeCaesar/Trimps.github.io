@@ -1,0 +1,182 @@
+#boneWrapper {
+  background: $gray-200;
+  color: $gray-900;
+  border-radius: $text-xs;
+  border: none;
+  box-shadow: $shadow-2xl;
+}
+
+#boneTitleContainer {
+  font-size: $text-4xl;
+  text-transform: uppercase;
+  color: $gray-800;
+  font-weight: $weight-semibold;
+  letter-spacing: 0.9pt;
+}
+
+#boneOwnedContainer {
+  font-size: $text-2xl;
+  color: $gray-800;
+  display: inline-block;
+  padding: 8px 16px;
+  background: $white;
+  border-radius: $text-xs;
+  box-shadow: $shadow-md;
+  margin-bottom: 8px;
+}
+#bonesOwned {
+  text-transform: uppercase;
+  color: $gray-900;
+  letter-spacing: 0.5pt;
+  font-weight: $weight-semibold;
+}
+#mainBoneHowTo,
+#boneFlavorRow {
+  font-size: $text-xl;
+  color: $gray-800;
+}
+
+.boneBuyColumn {
+  border: none;
+  border-right: 2px solid $gray-300;
+  background: $gray-100;
+  box-shadow: $shadow-md;
+  overflow: hidden;
+  border-radius: $text-xs;
+  padding: 8px 15px;
+  &:last-child {
+    border: none;
+  }
+}
+
+.boneBuyTitle {
+  font-size: $text-lg;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  letter-spacing: 0.3pt;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.boneBuyDesc {
+  font-size: $text-xs;
+  color: $gray-800;
+  background: none;
+  text-align: left;
+}
+
+.thingSmall {
+  border: none;
+  border-radius: 4px;
+  color: $gray-100;
+  font-size: $text-base;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  letter-spacing: 0.3pt;
+  padding: 4px 8px;
+  background: $gray-600;
+}
+
+.boneBtnStateTeal {
+  background: $blue-600;
+}
+
+#boostPreviewContainer {
+  background-color: $white;
+  .table {
+    > tbody {
+      > tr {
+        > td {
+          padding: 4px;
+          font-size: $text-base;
+          border-color: $gray-300;
+          .glyphicon {
+            color: $gray-700;
+          }
+        }
+      }
+    }
+  }
+}
+
+.boneBtn {
+  border: none;
+  border-radius: 4px;
+  font-size: $text-base;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  letter-spacing: 0.3pt;
+  color: $gray-100;
+  background: $gray-600;
+  padding: 4px 8px;
+
+  &.dangerColor {
+    background-color: $red-500;
+  }
+}
+
+.boneBtnStateOn {
+  background: $blue-600;
+}
+
+.importLocation {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2pt;
+  font-size: $text-sm;
+  text-align: left;
+  margin-top: 8px;
+}
+
+.importsTable {
+  > tbody {
+    > tr {
+      background-color: $gray-300;
+      &:hover {
+        background-color: $gray-400;
+      }
+      &.tealColor {
+        background-color: $blue-600 !important;
+      }
+      &.importOwned {
+        background-color: $green-600 !important;
+      }
+      > td {
+        border-top: 2px solid $gray-100;
+      }
+    }
+  }
+}
+
+#singleRunBonuses {
+  border: none;
+  .boneBuyDesc {
+    margin-bottom: 8px;
+  }
+}
+
+.singleBonusBox {
+  border: none;
+  &:hover {
+    background: $gray-300;
+  }
+}
+#singleRunBonuses {
+  div {
+    .boneBtn {
+      font-size: $text-sm;
+      letter-spacing: initial;
+    }
+  }
+}
+.miscDesc {
+  background-color: $gray-100;
+  font-size: $text-sm;
+  text-align: left;
+}
+
+#heliumGainedMisc {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}

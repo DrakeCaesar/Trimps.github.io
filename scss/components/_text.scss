@@ -1,0 +1,7 @@
+.bdHover,
+.psText {
+  &:hover {
+    color: $blue-400 !important;
+    text-decoration: none;
+  }
+}

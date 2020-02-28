@@ -1,0 +1,80 @@
+.playerGather {
+  font-size: $text-base;
+  border: none;
+  background-color: $gray-800;
+  box-shadow: $shadow-xl;
+  border-radius: $text-xs $text-xs $text-base $text-base;
+  padding: $text-sm;
+  color: $gray-100;
+  text-align: left;
+  border-bottom: 4px solid $gray-900;
+
+  .title {
+    text-transform: uppercase;
+    font-size: $text-base;
+    font-weight: $weight-semibold;
+    letter-spacing: 0.3pt;
+  }
+
+  .ownedArea {
+    display: block;
+    text-align: center;
+    font-size: $text-lg;
+    font-weight: $weight-light;
+    
+    & + br {
+      display: none;
+    }
+  }
+
+  .progress {
+    height: 20px;
+    > div {
+		  > span {
+        line-height: 20px;
+        font-size: $text-base;
+      }
+    }
+  }
+
+  .collectRow {
+    margin-top: 14px;
+    padding: 0;
+  }
+
+  .psText {
+    text-align: right;
+    font-size: $text-lg;
+    font-weight: $weight-light;
+    line-height: 1;
+    padding: 9px 0;
+  }
+
+  &#science {
+    .ownedArea {
+      margin-top: 16px;
+    }
+    .collectRow {
+      margin-top: 24px;
+    }
+  }
+}
+
+#miscColumn {
+  .title {
+    font-size: $text-sm !important;
+  }
+  span {
+    font-size: $text-lg !important;
+  }
+  .psText {
+    font-size: $text-base !important;
+  }
+
+  #heliumPh.heliumPh {
+    display: block;
+    text-align: right;
+    font-size: $text-base !important;
+    font-weight: $weight-light;
+  }
+}

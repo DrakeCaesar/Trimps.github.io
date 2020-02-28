@@ -1,0 +1,27 @@
+.progress-bar {
+	border: none !important;
+}
+
+.progress {
+	> div {
+		> span {
+			color: $gray-900;
+		}
+	}
+}
+
+.percentColorBlue {
+	background-color: $blue-600;
+}
+
+.percentColorYellow {
+	background-color: $yellow-500;
+}
+
+.percentColorOrange {
+	background-color: $orange-500;
+}
+
+.percentColorRed {
+	background-color: $red-600;
+}

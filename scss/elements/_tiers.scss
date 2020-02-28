@@ -1,0 +1,85 @@
+.achieveTier1 {
+  color: darken($gray-900, 10%);
+  border-color: darken($gray-900, 10%);
+}
+
+.achieveTier2 {
+  color: $gray-600;
+  border-color: $gray-500;
+}
+
+.achieveTier3 {
+  color: $gray-100;
+  border-color: $gray-100;
+  #achievementHover &,
+  #achievementPopup & {
+    color: $gray-100;
+    text-shadow: 0 1px 3px $gray-900;
+    border-color: $gray-100;
+  }
+}
+
+.achieveTier4 {
+  color: $green-600;
+  border-color: $green-500;
+}
+.achieveTier5 {
+  color: $blue-600;
+  border-color: $blue-600;
+}
+.achieveTier6 {
+  color: $purple-600;
+  border-color: $purple-600;
+}
+.achieveTier7 {
+  color: $yellow-500;
+  border-color: $yellow-500;
+}
+.achieveTier8 {
+  color: $orange-600;
+  border-color: $orange-600;
+}
+.achieveTier9 {
+  color: $red-800;
+  border-color: $red-800;
+  border-image: none;
+}
+.achievementPopupIcon, 
+#achievementHoverTitle, 
+#achievementPopupTitle {
+  &.achieveTier9 {
+    background-image: none;
+    -webkit-text-fill-color: initial;
+    color: $red-800;
+  }
+}
+.achieveTier10 {
+  color: $pink-500;
+  border-color: $pink-500;
+  border-image: none;
+}
+.achieveTier11 {
+  color: $yellow-500;
+  border-color: $pink-700;
+  border-image: linear-gradient(to right, $yellow-400 0%,$pink-600 20%,$purple-500 80%,$indigo-600 100%);
+  border-image-slice: 1;
+}
+.achievementPopupIcon, 
+#achievementHoverTitle, 
+#achievementPopupTitle {
+  &.achieveTier11 {
+    background-image: linear-gradient(to right, $yellow-400 0%,$pink-600 20%,$purple-500 80%,$indigo-600 100%);
+  }
+}
+// .achieveTier10 {
+//   color: $yellow-500;
+//   border-color: $yellow-500;
+// }
+// .achieveTier11 {
+//   color: $yellow-500;
+//   border-color: $yellow-500;
+// }
+// .achieveTier12 {
+//   color: $yellow-500;
+//   border-color: $yellow-500;
+// }

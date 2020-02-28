@@ -1,0 +1,16 @@
+.niceScroll::-webkit-scrollbar-track {
+  box-shadow: none;
+  border-radius: 5px;
+  background-color: $gray-800;
+}
+
+.niceScroll::-webkit-scrollbar {
+  width: 12px;
+  background-color: $gray-800;
+}
+
+.niceScroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: none;
+  background-color: $gray-500;
+}

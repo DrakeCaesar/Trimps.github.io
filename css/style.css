@@ -2722,6 +2722,9 @@ background: linear-gradient(135deg,  #000000 0%, #400000 50%, #100000 100%);
 	color: #202080;
 	cursor: pointer;
 }
+#achievementHelp.active{
+	color: #6060C0;
+}
 
 .bdZoneTitle{
 	font-size: 1.1em;

@@ -1,0 +1,47 @@
+#heirloomsPopup {
+  background: $gray-900;
+  color: $gray-100;
+  border-radius: $text-xs;
+  box-shadow: $shadow-2xl;
+  border: none;
+  overflow: hidden;
+}
+
+#heirloomsPopupBtns {
+  background: $gray-700;
+  color: $gray-100;
+  box-shadow: $shadow-lg;
+  text-align: left;
+  padding: 8px 16px;
+  font-size: $text-lg;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+
+  .icomoon {
+    font-size: $text-2xl;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 8px;
+  }
+  .icon-close {
+    color: $red-800;
+  }
+  .icon-archive {
+    color: $pink-700;
+  }
+}
+
+.selectedHeirloomItem {
+  background-color: $gray-900;
+  border: none;
+  border-radius: $text-xs;
+}
+
+#selectedHeirloomTitle {
+  font-size: $text-3xl;
+  text-transform: uppercase;
+}
+
+.heirloomSpent {
+  font-size: $text-lg;
+}

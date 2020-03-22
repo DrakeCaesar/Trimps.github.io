@@ -1,0 +1,142 @@
+#playerSpireTab a {
+  background-color: $gray-900;
+  color: $yellow-500;
+  &:hover {
+    background-color: $gray-800;
+  }
+}
+
+#playerSpirePopout {
+  top: 24px;
+}
+
+#playerSpireSpirePanel {
+  background: $gray-900;
+  border: none;
+  border-radius: $text-sm 0 0 $text-sm;
+  padding: $text-base;
+  box-shadow: $shadow-2xl;
+}
+
+#floatingCombatText {
+  border: none;
+}
+
+.floatingCombatText {
+  text-shadow: 	-1px -1px 0 rgba(255,255,255,0.8),  
+		1px -1px 0 rgba(255,255,255,0.8),
+	-1px 1px 0 rgba(255,255,255,0.8),
+		1px 1px 0 rgba(255,255,255,0.8);;
+}
+
+#playerSpireInfoPanel,
+#playerSpireSmallPanel {
+  background: $gray-900;
+  border: none;
+  border-radius: 0 $text-sm $text-sm 0;
+  box-shadow: $shadow-2xl;
+  hr {
+    border: none;
+  }
+}
+
+.playerSpireCell {
+  border-color: $gray-900;
+  border-width: 2px;
+  border-radius: 4px;
+}
+
+.spireTrapIcon {
+  text-shadow: none;
+}
+
+.playerSpireEnemy {
+  border: none;
+  border-radius: 4px;
+  box-shadow: $shadow-sm;
+}
+
+.spireQuest {
+  border: none;
+  border-radius: $text-2xs;
+  background: $gray-800;
+  box-shadow: $shadow-lg;
+}
+
+#playerSpireInfoTop {
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.spireControlBoxDbl div,
+.spireControlBox,
+.spireControlBoxSmall {
+  border: none;
+  border-radius: 4px;
+  background: $gray-700;
+  font-size: $text-sm;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  letter-spacing: 0.3pt;
+  color: $gray-100;
+  padding: 4px 8px;
+  box-shadow: $shadow-md;
+  &:hover {
+    background: $gray-600;
+  }
+}
+
+.spireControlBoxDbl {
+  div {
+    font-size: $text-xs;
+    margin: 0;
+    padding: 4px;
+    &:first-child {
+      margin-right: 5%;
+    }
+  }
+}
+
+.spireTrapBox {
+  border-color: transparent;
+  border-radius: 4px;
+  background: $gray-600;
+  box-shadow: $shadow-md;
+  &:hover {
+    opacity: 0.9;
+  }
+  &[style*="background-color: grey"] {
+    background-color: $gray-800 !important;
+    color: $gray-600;
+    opacity: 0.6;
+  }
+  .icomoon {
+    font-size: $text-3xl;
+    text-shadow: none;
+    top: 25%;
+  }
+}
+
+.spireTrapBox.selected, 
+.spireTrapBoxSmall.selected, 
+.spireControlBox.selected {
+  border-color: $yellow-400 !important;
+}
+
+.spireTrapBoxSmall, 
+.spireControlBoxSmall {
+  border-color: transparent;
+  box-shadow: $shadow-md;
+  border-radius: 4px;
+  background: $gray-700;
+  
+  &[style*="background-color: grey"] {
+    background-color: $gray-800 !important;
+    color: $gray-600;
+    opacity: 0.6;
+  }
+
+  .icomoon {
+    text-shadow: none;
+  }
+}

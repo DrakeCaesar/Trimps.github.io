@@ -1,0 +1,191 @@
+.tabColNature {
+  font-size: $text-base;
+}
+
+.tabColPoison,
+.tabColWind,
+.tabColIce {
+  box-shadow: none;
+  border: 2px $gray-800 solid;
+  border-radius: 8px;
+}
+
+.natureTop {
+  text-shadow: none;
+  text-transform: uppercase;
+  font-size: $text-sm;
+  background: none;
+  > span {
+    font-weight: $weight-semibold;
+  }
+}
+.natureTitle {
+  font-size: $text-xl;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+}
+
+.infoSpanNature {
+  border: none;
+  font-size: $text-2xs;
+  width: auto;
+  padding: 2px 4px 2px 20px;
+  top: 6px;
+  left: 6px;
+  box-shadow: $shadow-md;
+  
+  span {
+    font-size: inherit;
+    border-radius: 50px;
+    font-size: 0.65rem;
+    position: absolute;
+    line-height: 18px;
+    width: 18px;
+    left: 0;
+    top: 0px;
+  }
+}
+
+.natureBuyIcon {
+  border: none;
+  border-radius: 4px;
+  padding: 0;
+  font-size: $text-base;
+  background-color: rgba(0,0,0,0.2);
+  box-shadow: $shadow-md;
+  &:hover {
+    background-color: rgba(255,255,255,0.1);
+  }
+}
+.natureBigIcon {
+  font-size: $text-3xl;
+  line-height: 3.1vw;
+  left: unset;
+  top: unset;
+  right: 10px;
+}
+
+.natureUpgradeLevel,
+.natureUpgradeCost {
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  left: 8px;
+}
+.natureUpgradeLevel {
+  font-size: $text-sm;
+  top: 2px;
+}
+
+.natureUpgradeCost {
+  font-size: $text-base;
+  top: unset;
+  bottom: 2px;
+  .green {
+    text-shadow: none;
+  }
+  .orange {
+    color: $red-600;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+  }
+}
+
+.natureSmallIcon {
+  font-size: $text-2xl;
+  &.icon-flask {
+    color: $green-400;
+  }
+  &.icon-air {
+    color: $blue-800;
+  }
+  &.glyphicon-certificate {
+    color: $blue-400;
+  }
+
+}
+
+//---- 	POISON
+
+.tabColPoison {
+  background: $green-600 !important;
+  color: $green-100;
+}
+.empoweredCellPoison, 
+.badNamePoison, 
+#poisonEmpowermentIcon {
+  background: $green-600 !important;
+}
+
+#infoSpanPoison {
+  background: $green-700;
+  box-shadow: $shadow-md;
+  span {
+    background: $green-800;
+    color: $green-200;
+  }
+}
+
+.empowerTabPoison a {
+  background: $gray-900 !important;
+  color: $green-400 !important;
+}
+.empowerTabPoison.tabSelected a, 
+.empowerTabPoison a:hover {
+  background: $gray-800 !important;
+}
+
+//---- 	WIND
+
+.empowerTabWind a,
+.empoweredCellWind,
+.tabColWind,
+.badNameWind,
+#windEmpowermentIcon {
+  background: $blue-700 !important;
+}
+
+#infoSpanWind {
+  background: $blue-800;
+  box-shadow: $shadow-md;
+  span {
+    background: $blue-900;
+    color: $blue-200;
+  }
+}
+.empowerTabWind a {
+  background: $gray-900 !important;
+  color: $blue-500 !important;
+}
+.empowerTabWind.tabSelected a, 
+.empowerTabWind a:hover {
+  background: $gray-800 !important;
+}
+
+//---- 	ICE
+
+.tabColIce {
+  background: $blue-400 !important;
+  color: $blue-100;
+}
+
+#infoSpanIce {
+  background: $blue-500;
+  box-shadow: $shadow-md;
+  span {
+    background: $blue-600;
+    color: $blue-100;
+  }
+}
+
+.empowerTabIce a {
+  background: $gray-900 !important;
+  color: $blue-300 !important;
+}
+.empowerTabIce.tabSelected a, 
+.empowerTabIce a:hover {
+  background: $gray-800 !important;
+}
+.empoweredCellIce, 
+.badNameIce,
+#iceEmpowermentIcon {
+  background: $blue-300 !important;
+}

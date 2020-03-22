@@ -1,0 +1,394 @@
+#heirloomWrapper {
+  background: $gray-900;
+  color: $gray-100;
+  padding: $text-3xl;
+}
+
+#heirloomTitleBar {
+  margin: 0 0 20px 0;
+  background: $gray-800;
+  border: none;
+  border-radius: $text-base;
+  text-align: left;
+  font-size: $text-xl;
+  text-transform: uppercase;
+}
+
+#nullifiumContainer {
+  color: $pink-700;
+  text-align: center;
+  text-transform: none;
+}
+
+.heirBtn {
+  border: none;
+  .colorPrimary {
+    background-color: $blue-700;
+    color: $blue-100;
+  }
+  .colorDanger {
+    background-color: $red-700;
+    color: $red-100;
+  }
+}
+.heirInfo {
+  border-radius: 4px;
+  font-size: $text-sm;
+  font-weight: $weight-semibold;
+  padding: 4px 8px;
+}
+
+#heirloomHelp {
+  max-width: 50vw;
+  position: absolute;
+  right: $text-3xl;
+  background: $gray-800;
+  padding: $text-base $text-xl;
+  font-size: $text-lg;
+  border-radius: $text-xs;
+  line-height: 1.5;
+  text-align: left;
+  box-shadow: $shadow-2xl;
+  z-index: 10;
+}
+
+
+#equippedHeirlooms,
+#carriedHeirlooms,
+#extraHeirlooms {
+  background: $gray-800;
+  border: none;
+  border-radius: $text-sm;
+  padding-top: $text-base;
+  overflow: hidden;
+}
+
+#equippedHeirlooms {
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  font-size: $text-lg;
+}
+
+.heirloomEquippedContainer.col-xs-4 {
+  font-size: $text-3xl;
+}
+
+#ShieldEquipped, 
+#StaffEquipped, 
+#CoreEquipped {
+  margin-top: 4px;
+  margin-bottom: $text-base;
+  background: $gray-900;
+  box-shadow: $shadow-2xl;
+  border: none;
+  border-radius: $text-xs;
+}
+
+#ShieldEquippedName, 
+#StaffEquippedName, 
+#CoreEquippedName {
+  font-size: $text-lg;
+  line-height: 1.5;
+}
+
+#carriedHeirlooms {
+  font-size: $text-lg;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+}
+
+#carriedHeirloomsText, 
+#extraHeirloomsText {
+  text-transform: none;
+  font-size: $text-base;
+}
+
+#extraHeirlooms {
+  font-size: $text-lg;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+}
+
+#extraHeirloomsHere {
+  text-transform: none;
+  font-weight: $weight-normal;
+}
+
+#addCarriedBtn, 
+#recycleAllHeirloomsBtn {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: $text-xs;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+}
+
+.heirloomBtnGroup {
+  background: $gray-700;
+  border: none;
+  padding: 8px;
+  font-size: $text-base;
+  font-weight: $weight-semibold;
+}
+
+.heirloomBtnInactive {
+  background: $gray-700;
+  color: $gray-500;
+}
+
+.heirloomBtnActive, 
+.heirloomRecycleWarning {
+  background-color: $pink-900;
+  color: $pink-100;
+}
+
+.heirBtn {
+  border-radius: 4px;
+
+}
+
+.heirBtn.heirloomBtnActive {
+  &:hover {
+    background: $pink-800;
+    box-shadow: none;
+    opacity: 1;
+  }
+}
+
+#heirRare {
+  background: $gray-700;
+  color: $gray-100;
+  border-radius: $text-xs;
+}
+
+.rarityBdBox {
+  border-radius: 4px;
+  border: none;
+  font-size: $text-sm;
+  font-weight: $weight-semibold;
+  text-transform: uppercase;
+  margin: 8px 4px;
+  padding: 4px 8px;
+}
+
+.heirloomMod {
+  background: $gray-700;
+  border: none;
+  padding: 8px 32px;
+  box-shadow: $shadow-lg;
+  font-size: $text-xl;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  &:hover {
+    background: $gray-700;
+  }
+}
+
+#heirloomNameInput {
+  background: $gray-300;
+  border: none;
+  border-radius: 8px;
+  color: $gray-800;
+  padding: 0 8px;
+  &:focus {
+    outline: none;
+    box-shadow: $shadow-focus;
+  }
+}
+
+.renameHeirloomBtn {
+  background: $gray-700;
+  color: $gray-100;
+  font-size: $text-sm;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  border-radius: 4px;
+  margin-right: 4px;
+  border: none;
+}
+
+.heirloomEquipped {
+  font-size: $text-lg;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  color: $pink-700;
+  text-shadow: none;
+}
+
+#modReplaceBox, 
+#modUpgradeBox {
+  border: none;
+  background: $gray-800;
+  padding: 8px 16px;
+  height: 8vw;
+}
+
+#modReplaceBox {
+  border-radius: $text-sm 0 0 $text-sm;
+}
+
+#modUpgradeBox {
+  border-radius: 0 $text-sm $text-sm 0;
+}
+
+#modReplaceSelect {
+  border: none;
+  margin-left: 0;
+  background-color: $gray-700;
+}
+
+.upgradeCostTextMax {
+  margin-top: 0;
+}
+
+#heirloomRarityMisc {
+  div {
+    padding: 4px;
+  }
+}
+
+// common
+.heirloomRare0 {
+  color: $gray-100;
+ 
+  &.rarityBdBox {
+    border: none;
+    background: $gray-100;
+    color: $gray-900;
+  }
+
+  .heirloomMod:hover {
+    border: none;
+    opacity: 0.9;
+  }
+
+  #heirloomsPopup & {
+    color: $gray-100;
+  }
+}
+
+// uncommon
+.heirloomRare1 {
+  color: $green-600;
+
+  &.rarityBdBox {
+    text-align: center;
+    border: none;
+    background: $green-600;
+    color: $green-100;
+  }
+
+  .heirloomMod:hover {
+    border: none;
+    opacity: 0.9;
+  }
+
+  #heirloomsPopup & {
+    color: $green-600;
+  }
+}
+
+// Rare
+.heirloomRare2 {
+  color: $blue-600;
+
+  &.rarityBdBox {
+    text-align: center;
+    border: none;
+    background: $blue-600;
+    color: $blue-100;
+  }
+  .heirloomMod:hover {
+    border: none;
+    opacity: 0.9;
+  }
+}
+
+// Epic
+.heirloomRare3 {
+  color: $magenta-600;
+
+  &.rarityBdBox {
+    text-align: center;
+    border: none;
+    background: $magenta-600;
+    color: $magenta-100;
+  }
+
+  .heirloomMod {
+    color: $magenta-300;
+  }
+  .heirloomMod:hover {
+    border: none;
+    opacity: 0.9;
+  } 
+}
+
+// Legendary
+.heirloomRare4 {
+  color: $orange-600;
+  
+  &.rarityBdBox {
+    text-align: center;
+    border: none;
+    background: $orange-600;
+    color: $orange-100;
+  }
+  .heirloomMod:hover {
+    border: none;
+    opacity: 0.9;
+  }
+}
+
+// Magificent
+.heirloomRare5 {
+  color: $red-600;
+
+  &.rarityBdBox {
+    text-align: center;
+    border: none;
+    background: $red-600;
+    color: $red-100;
+  }
+  .heirloomMod:hover {
+    border: none;
+    opacity: 0.9;
+  }
+}
+
+// Etherial
+.heirloomRare6 {
+  color: $indigo-600;
+  
+  .heirloomMod:hover, 
+  &.rarityBdBox {
+    text-align: center;
+    border: none;
+    background: $indigo-600;
+    color: $indigo-100;
+  }
+  #heirloomRarityMisc & {
+    background: $indigo-600;
+  }
+}
+
+// Magma
+.heirloomRare7 {
+  color: $orange-200;
+  
+  &.rarityBdBox {
+    border: none;
+    text-align: center;
+    color: $orange-200;
+    background: linear-gradient(135deg,  #000000 0%, #400000 50%, #100000 100%)
+  }
+  .heirloomMod:hover {
+    border: none;
+    background: $red-900;
+  }
+  
+  &.heirloomThing, 
+  div .selectedHeirloomIcon {
+    color: $orange-200;
+  }
+}

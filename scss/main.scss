@@ -5,6 +5,7 @@
 @import 'variables/colors';
 @import 'variables/fonts';
 @import 'variables/shadows';
+@import 'variables/base64';
 
 //
 // 	Components
@@ -31,9 +32,17 @@
 @import 'elements/tooltips';
 @import 'elements/bone-wrapper';
 @import 'elements/buy-container';
+@import 'elements/nature';
 @import 'elements/battle-container';
 @import 'elements/maps-container';
 @import 'elements/achievements';
 @import 'elements/tiers';
 @import 'elements/settings';
 @import 'elements/portal';
+@import 'elements/heirloom-container';
+@import 'elements/heirloom-popup';
+@import 'elements/voids';
+@import 'elements/mastery-tab';
+@import 'elements/dimensional-gen';
+@import 'elements/stats';
+@import 'elements/spire';

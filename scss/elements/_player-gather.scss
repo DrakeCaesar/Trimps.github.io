@@ -20,7 +20,7 @@
     display: block;
     text-align: center;
     font-size: $text-lg;
-    font-weight: $weight-light;
+    font-weight: $weight-normal;
     
     & + br {
       display: none;
@@ -45,7 +45,7 @@
   .psText {
     text-align: right;
     font-size: $text-lg;
-    font-weight: $weight-light;
+    font-weight: $weight-normal;
     line-height: 1;
     padding: 9px 0;
   }

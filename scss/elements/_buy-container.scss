@@ -79,6 +79,9 @@
 #buyContainer {
   background: $gray-800;
   border-radius: 0 0 $text-xs $text-xs;
+  .lowPad {
+    padding: 0 5px;
+  }
 }
 
 .titleDiv {
@@ -143,21 +146,39 @@
   color: $red-100;
 }
 
-#fireBtn {
-  border: none;
-  border-radius: 4px;
-  font-size: $text-xs;
-  text-transform: uppercase;
-  font-weight: $weight-semibold;
-  letter-spacing: 0.3pt;
-  color: $gray-100;
-  padding: 4px 8px;
+.thingColorCtrl {
+  background: radial-gradient($blue-500 10%, $blue-800 60%);
+  &:hover {
+    background: radial-gradient($blue-400 10%, $blue-600 60%);
+  }
 }
 
-.fireBtnNotFiring {
-  background: $gray-600;
+#GeneticistassistContainer {
+  background: transparent;
 }
-
-.fireBtnFiring {
-  background: $red-700;
+#Geneticistassist {
+  &.stateHappy {
+    background: $blue-900;
+    &.thingColorCtrl {
+      background: radial-gradient($blue-600 10%, $blue-800 45%, $blue-900 70%);
+    }
+  }
+  &.stateHiring {
+    background: $green-900;
+    &.thingColorCtrl {
+      background: radial-gradient($green-600 10%, $green-800 45%, $green-900 70%);
+    }
+  }
+  &.stateFiring {
+    background: $red-900;
+    &.thingColorCtrl {
+      background: radial-gradient($red-600 10%, $red-800 45%, $red-900 70%);
+    }
+  }
+  &.stateDanger {
+    background: $red-700;
+    &.thingColorCtrl {
+      background: radial-gradient($red-400 10%, $red-500 45%, $red-700 70%);
+    }
+  }
 }

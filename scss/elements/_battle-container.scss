@@ -9,18 +9,54 @@
   font-size: $text-base;
 }
 
+#trimpsFighting {
+  font-size: $text-sm;
+}
+
 #realTrimpName,
 #badGuyName {
   text-transform: uppercase;
   font-weight: $weight-semibold;
   letter-spacing: 0.3pt;
-  display: flex;
+  display: inline;
   align-items: center;
 }
 
+.guyRow {
+  margin-top: 4px;
+  font-size: $text-sm;
+}
+
+.badNameMutation {
+  &.Corruption {
+    background: transparent;
+    color: $purple-500;
+  }
+}
+
+.battleCell.Magma, 
+.badge.Magma, 
+.message.Magma {
+  background-color: $red-800;
+  color: $red-200;
+}
+.badNameMutation.Magma {
+  background: none;
+  color: $red-600;
+}
+
 #damageDiv,
-#badGuyRow {
-  font-weight: $weight-light;
+#badGuyRow,
+#goodGuyBlock,
+#goodGuyBlockName {
+  font-weight: $weight-normal;
+  font-size: $text-sm;
+}
+
+#critSpan, 
+#badCrit {
+  font-size: $text-xs;
+  text-transform: uppercase;
 }
 
 #lootBdBtn {
@@ -40,16 +76,21 @@
 .battleCell {
   border: 1px solid $gray-800;
 }
+.cellColorOverkill {
+  background: $green-400 !important;
+  color: $gray-900 !important;
+}
 
 .cellColorBeaten {
   background: $green-500 !important;
   color: $gray-900 !important;
 }
 
-// .cellColorCurrent {
-//   background: $yellow-400 !important;
-//   color: $gray-900 !important;
-// }
+.battleCell.Corruption, 
+.badge.Corruption {
+  background: $purple-1000;
+  color: $purple-200;
+}
 
 #battleSideTitle {
   background: $gray-900;
@@ -62,9 +103,10 @@
 }
 
 .battleSideBtnContainer {
+  margin-top: 4px;
   .fightBtn {
     font-size: $text-base;
-    color: $gray-900;
+    color: $gray-100;
     text-transform: uppercase;
     font-size: $text-sm !important;
     font-weight: $weight-semibold;
@@ -96,6 +138,9 @@
     background: $indigo-600;
     color: $indigo-100;
   }
+  #boneBtnMain {
+    color: $gray-900;
+  }
   #boneBtnText {
     font-size: $text-sm;
   }
@@ -113,17 +158,133 @@
       }
     }
   }
+  .mapBonus10 {
+    text-shadow: none;
+    color: yellow;
+  }
   .shrinkBtnText {
     div:first-child {
       margin: 0 !important;
       font-size: $text-xs !important;
     }
   }
+  .heirloomsBtnColor {
+    background: $pink-700;
+    color: $pink-100;
+  }
+}
+.badge {
+  vertical-align: middle;
 }
 
+.antiBadge {
+  background: $gray-700;
+  margin-left: 4px;
+}
 .badBadge {
   font-size: $text-2xs;
   padding-left: 10px;
   background-color: $gray-700;
-  margin-left: 10px;
+  margin-left: 4px;
+}
+.badge.Corruption {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 17px;
+  font-size: $text-xs;
+}
+
+#colStances {
+  padding-right: 0;
+  > div {
+    overflow: hidden;
+    border-radius: 4px;
+    padding-right: 0 !important;
+    margin-right: 15px;
+  }
+}
+
+#form4Container {
+  border-radius: 0 4px 4px 0;
+  overflow: hidden;
+}
+
+.formFifth {
+  border-radius: 0;
+}
+
+.formationBtn {
+  background: $blue-800;
+  color: $gray-100;
+  border: none;
+  border-radius: 0;
+  font-size: $text-sm;
+  font-weight: $weight-semibold;
+  &:hover {
+    background: $gray-600 !important;
+    color: $gray-400;
+  }
+}
+
+.formationStateDisabled {
+  background-color: $gray-700 !important;
+  color: $gray-500;
+}
+
+.formationStateEnabled {
+  background: $blue-600 !important;
+  color: $blue-100;
+  &:hover {
+    background: $blue-500 !important;
+  }
+}
+
+#chainHolder {
+  border: none;
+  color: $gray-100;
+  font-size: $text-xs;
+  font-weight: $weight-semibold;
+}
+.shriekStateDisabled {
+  background: $red-700 !important;
+}
+.shriekStateEnabled {
+  background: $green-500 !important;
+}
+.shriekStateCooldown {
+  background: $gray-700 !important;
+}
+
+.spire {
+  ul {
+    li.spireCell {
+      &.cellColorNotBeaten {
+        background: $gray-600;
+        &.Corruption {
+          background: $purple-1000;
+        }
+      }
+    }
+  }
+}
+
+.spireMetals, 
+.spireMetalsMsg {
+  color: $yellow-500;
+}
+
+#grid.liquid {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: $shadow-xl;
+  color: $yellow-900;
+  ul {
+    li {
+      background: $yellow-400;
+      &.cellColorCurrent {
+        background: $yellow-400 !important;
+      }
+    }
+  }
 }

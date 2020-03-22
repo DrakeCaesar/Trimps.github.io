@@ -1,3 +1,8 @@
+.btn {
+  &:active {
+    box-shadow: none;
+  }
+}
 .workBtn {
   background-color: $gray-700;
   border: none;
@@ -31,24 +36,40 @@
 .autoUpgradeBtn {
   border: none;
   text-align: center;
-  font-size: $text-xs;
+  font-size: $text-2xs;
   text-transform: uppercase;
-  padding: 6px 8px;
-  margin-top: 3px;
+  font-weight: $weight-semibold;
+  letter-spacing: -0.2pt;
+  color: $gray-100;
+  padding: 4px 8px;
   border-radius: 4px;
 
   &.colorSuccess {
-    background: $green-800;
-    color: $green-100;
+    background: $blue-700;
+    color: $blue-100;
     &:hover {
-      background: $green-800;
+      background: $blue-700;
     }
   }
   &.colorDanger {
-    background: $gray-700;
+    background: $gray-600;
     color: $gray-300;
     &:hover {
-      background: $gray-700;
+      background: $gray-600;
+    }
+  }
+  div:first-child {
+    width: auto;
+  }
+
+  div:nth-child(2) {
+    width: auto;
+    background: $blue-600;
+    color: $blue-100;
+    padding: 4px;
+    margin: -4px -8px -4px 0;
+    &:hover {
+      background: $blue-500;
     }
   }
 }
@@ -61,5 +82,55 @@
   .dangerColor {
     background-color: $red-900;
     color: $red-100;
+  }
+}
+
+#fireBtn {
+  border: none;
+  border-radius: 4px;
+  font-size: $text-2xs;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  letter-spacing: 0.3pt;
+  color: $gray-100;
+  padding: 4px 8px;
+}
+
+.fireBtnNotFiring {
+  background: $gray-600;
+}
+
+.fireBtnFiring {
+  background: $red-700;
+}
+
+.toggleAllBtn {
+  font-size: $text-sm;
+  text-transform: uppercase;
+  letter-spacing: 0.3pt;
+  padding: 6px 12px;
+  color: $gray-100;
+  background-color: $blue-700;
+  font-weight: $weight-semibold;
+  border: none;
+  line-height: 1.3;
+  &:hover {
+    background-color: $blue-600;
+    color: $gray-100;
+  }
+}
+
+#autoTooltipHelpBtn {
+  font-size: $text-xs;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  letter-spacing: 0.3pt;
+  background: transparent;
+  color: $blue-700;
+  padding: 2px 4px;
+  border: none;
+  border: 4px;
+  &:hover {
+    background: $blue-200;
   }
 }

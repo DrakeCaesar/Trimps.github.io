@@ -1,0 +1,167 @@
+#generatorWindow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  text-align: left;
+  // border-left: 8px transparent solid;
+}
+
+#genTitleContainer {
+  float: none;
+}
+
+#generatorTitle {
+  font-size: $text-sm;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  letter-spacing: 0.3pt;
+  color: $gray-100;
+}
+
+.dgChangeBtn {
+  border: none;
+  border-radius: 4px;
+  font-size: $text-2xs;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  letter-spacing: 0.1pt;
+  padding: 4px 8px;
+  height: auto;
+}
+
+#generatorUpgradeBtn {
+  background: $gray-900;
+  font-size: $text-sm;
+  font-weight: $weight-semibold;
+  color: $gray-100;
+  padding: 4px 8px;
+}
+
+#genGaugeContainer {
+  background: none;
+  float: none;
+}
+
+#fuelContainer {
+  border: none;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+#fuelOwnedText {
+  color: $gray-900;
+}
+#generatorFuelOwned,
+#generatorFuelMax {
+  font-weight: $weight-semibold;
+}
+
+#fuelBar {
+  background: $yellow-500;
+}
+
+#fuelStorageBar {
+  background: $yellow-900;
+}
+
+#generatorProducingContainer {
+  font-size: $text-sm;
+  text-align: center;
+}
+
+#generatorTrimpsPs {
+  font-weight: $weight-semibold;
+}
+
+.radial-progress {
+  border: none;
+  background: $teal-700;
+  box-shadow: $shadow-lg;
+  .radial-progress-arrow {
+    width: 4%;
+    left: 48%;
+    box-shadow: $shadow;
+    &.static {
+      background-color: $teal-900;
+      border: none;
+      width: 2%;
+      left: 49%;
+    }
+    &.mobile {
+      background-color: $teal-500;
+    }
+  }
+  .radial-progress-knob {
+    border: none;
+    box-shadow: $shadow-md;
+  }
+}
+
+#generatorNextTick {
+  text-shadow: none;
+  color: $gray-100;
+}
+
+.generatorStateActive {
+  background: $red-800;
+  .radial-progress {
+    background: $red-700;
+    .radial-progress-arrow.mobile {
+      background-color: $red-300;
+    }
+    .radial-progress-knob {
+      background: $red-900;
+    }
+  }
+}
+
+.generatorStatePassive {
+  background: $blue-800;
+  .radial-progress {
+    background: $blue-700;
+    .radial-progress-arrow.mobile {
+      background-color: $blue-300;
+    }
+    .radial-progress-knob {
+      background: $blue-900;
+    }
+  }
+}
+
+.generatorStateHybridActive {
+  background: linear-gradient(to right, $teal-700 30%,$red-800 75%);
+  .radial-progress {
+    background: $red-700;
+    .radial-progress-arrow {
+      &.mobile {
+        background-color: $red-300;
+      }
+      &.static {
+        background-color: $red-900;
+      }
+    }
+    .radial-progress-knob {
+      background: $red-900;
+    }
+  }
+}
+
+.generatorStateHybridPassive {
+  background: linear-gradient(to right, $teal-700 30%,$blue-800 75%);
+  .radial-progress {
+    background: $blue-700;
+    .radial-progress-arrow {
+      &.mobile {
+        background-color: $blue-300;
+      }
+      &.static {
+        background-color: $blue-900;
+      }
+    }
+    .radial-progress-knob {
+      background: $blue-900;
+    }
+  }
+}

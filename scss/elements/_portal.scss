@@ -30,15 +30,6 @@
   }
 }
 
-.portalMk1 {
-  background: $green-800;
-  color: $green-100 !important;
-}
-
-.portalMkPreview {
-  background: darken($gray-900, 10%);
-}
-
 #viewChallenge {
   text-align: center;
 }
@@ -93,7 +84,7 @@
 }
 
 #portalHelium {
-  font-size: $text-3xl;
+  font-size: $text-2xl;
   line-height: $text-4xl;
 }
 
@@ -172,6 +163,14 @@
   &.perkColorMaxed {
     background-color: $indigo-800;
   }
+  &.additive {
+    &.perkColorOn {
+      background-color: $green-800;
+    }
+    &.perkColorOff {
+      background-color: $gray-900;
+    }
+  }
 }
 
 #challenges {
@@ -184,6 +183,20 @@
   font-weight: $weight-semibold;
   letter-spacing: 0.5pt;
   text-transform: uppercase;
+  + div {
+    text-align: right;
+  }
+}
+
+.thingColorSquared {
+  background-color: $magenta-700 !important;
+  color: $magenta-100 !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 4px 8px;
+  &:hover {
+    background-color: $magenta-800 !important;
+  }
 }
 
 #portalStory,
@@ -202,6 +215,46 @@
   border-radius: $text-sm;
 }
 
+.dailyTopRow {
+  overflow: hidden;
+  background: none;
+  border-radius: $text-2xs;
+  font-weight: $weight-semibold;
+}
+
+.dailyTop {
+  &.colorGrey {
+    background: $gray-600;
+    color: $gray-300;
+    &:hover {
+      background: $gray-500;
+    }
+  }
+  &.colorInfo {
+    background: $blue-700;
+    &:hover {
+      background: $blue-600;
+    }
+  }
+  &.colorSuccess {
+    background: $green-600;
+    &:hover {
+      background: $green-500;
+    }
+  }
+}
+
+.dailyTopRow + .row {
+  margin: 8px -15px !important;
+  text-transform: uppercase;
+  font-size: $text-sm;
+  letter-spacing: 0.3pt;
+  font-weight: $weight-semibold !important;
+  div:last-child {
+    text-align: right;
+  }
+}
+
 #challengesHere {
   text-align: center;
 }
@@ -211,10 +264,17 @@
   font-size: $text-base;
   background-color: $blue-700;
   padding: 4px 4px 2px;
-  border-bottom: 4px solid $blue-700;
+  border-bottom: 4px solid transparent;
   &:hover {
     background-color: $blue-600;
-    border-color: $blue-600;
+    border-color: transparent;
+  }
+  &[style*="border-color: black"] {
+    color: $gray-900 !important;
+    border-color: transparent !important;
+    &.cBorderOn {
+      border-color: $magenta-400 !important;
+    }
   }
 }
 
@@ -231,12 +291,29 @@
   background-color: $gray-600;
   border-color: $gray-600;
   color: $gray-900;
+  &.cBorderOn {
+    border-color: $gray-500;
+  }
+}
+
+#challengeDaily {
+  background-color: $orange-600;
+  border-color: $orange-600;
+  &:hover {
+    background-color: $orange-500;
+    border-color: $orange-500;
+  }
+  &.cBorderOn,
+  &.cBorderOn:hover {
+    border-color: $orange-400;
+  }
 }
 
 .cBorderOn,
 .cBorderOn:hover {
   box-shadow: none;
-  border-color: $blue-200;
+  // border-color: rgba($gray-100, 10%);
+  border-color: transparentize($color: $gray-100, $amount: .7);
 }
 
 #portalBtnContainer {
@@ -247,4 +324,18 @@
     letter-spacing: 0.5pt;
     font-weight: $weight-semibold;
   }
+}
+
+.portalMk1 {
+  background: $green-800;
+  color: $green-100 !important;
+}
+
+.portalMk2 {
+  background: $teal-600;
+  color: $teal-100 !important;
+}
+
+.portalMkPreview {
+  background: darken($gray-900, 10%);
 }

@@ -1,5 +1,7 @@
 body {
   color: $gray-900;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
 #innerWrapper {

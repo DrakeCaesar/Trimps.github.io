@@ -1,0 +1,110 @@
+#talentsAlert {
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  padding: 0;
+  line-height: 16px;
+}
+
+#talentsAffordable {
+  font-size: $text-lg;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  padding-top: 4px;
+}
+
+#talentsTitle {
+  font-size: $text-xl;
+  text-transform: uppercase;
+  letter-spacing: 0.5pt;
+  font-weight: $weight-normal;
+  #essenceOwned {
+    font-weight: $weight-semibold;
+    font-size: $text-2xl;
+  }
+}
+
+#talentRespecBtn {
+  border: none;
+  border-radius: 4px;
+  font-size: $text-xs;
+  text-transform: uppercase;
+  font-weight: $weight-semibold;
+  letter-spacing: 0.3pt;
+  padding: 4px 8px;
+  margin-top: 4px;
+}
+
+#talentsCost {
+  font-size: $text-lg;
+  margin-bottom: 12px;
+  text-align: left;
+  padding-left: 4px;
+
+  #talentsNextCost {
+    font-size: $text-xl;
+    font-weight: $weight-semibold;
+  }
+}
+
+#talentsContainer {
+  > .row {
+    margin-bottom: 12px;
+  }
+}
+
+.talentItem {
+  border: none;
+  border-radius: 4px;
+  margin: 2px;
+  width: calc((100% / 6) - 4px);
+  box-sizing: border-box;
+}
+
+.talentPurchased {
+  background: $green-700;
+  color: $green-100;
+}
+
+.talentNotPurchased {
+  background: $gray-900;
+  color: $gray-100;
+}
+
+.talentRowLocked {
+  .talentNotPurchased {
+    background: $gray-700;
+    color: $gray-500;
+  }
+}
+
+.talentRowUnlocked {
+  .talentNotPurchased {
+    &.talentReqNeeded {
+      background-color: $red-700;
+      color: $gray-100;
+    }
+  }
+}
+
+.talentNotPurchased, 
+.talentReqNeeded {
+  &.talentCanBuyRow{
+    background-color: $yellow-800 !important;
+    color: $yellow-100;
+  }
+  &.talentIdealRow{
+    background-color: $blue-700 !important;
+    color: $blue-100;
+  }
+}
+
+.talentPurchased {
+  &.talentCanBuyRow{
+    background-color: $green-900 !important;
+  }
+  &.talentIdealRow{
+    background-color: $green-800 !important;
+  }
+}
+

@@ -1,0 +1,84 @@
+#statsWrapper {
+  background: $gray-900;
+  .btn-info {
+    color: $blue-100;
+    background-color: $blue-600;
+    border-color: $blue-600;
+    &:hover {
+      background-color: $blue-700;
+      border-color: $blue-700;
+    }
+  }
+  .btn-danger {
+    color: $blue-100;
+    background-color: $red-600;
+    border-color: $red-600;
+    &:hover {
+      background-color: $red-700;
+      border-color: $red-700;
+    }
+  }
+  .statToggleBtn {
+    font-size: $text-2xl;
+    text-transform: uppercase;
+    letter-spacing: 0.3pt;
+    font-weight: $weight-semibold;
+    border: none;
+    color: $gray-100;
+    background: $gray-700;
+    &:hover {
+      background: $gray-600;
+      color: $gray-100;
+    }
+    &[style*="border: 5px solid black"] {
+      border: none !important;
+    }
+    &[style*="border: 5px solid yellow"] {
+      border: none !important;
+      background: $blue-600;
+    }
+  }
+  .inPortalBtn {
+    font-size: $text-base !important;
+    text-transform: uppercase;
+    font-weight: $weight-semibold;
+    letter-spacing: 0.3pt;
+  }
+}
+
+#statsTitle {
+  font-size: $text-3xl;
+  text-transform: uppercase;
+  letter-spacing: 0.7pt;
+  font-weight: $weight-semibold;
+  color: $gray-100;
+  display: block;
+}
+
+.statContainer {
+  border-radius: 8px;
+  background: $gray-800;
+  text-align: left;
+  padding: 12px 24px;
+  margin-bottom: 12px;
+}
+
+.statTitle {
+  font-size: $text-xs;
+  text-transform: uppercase;
+  letter-spacing: 0.3pt;
+  color: $gray-400;
+  font-weight: $weight-semibold;
+  display: block;
+  + br {
+    display: none;
+  }
+}
+
+.statValue {
+  // margin-top: -4px;
+  display: block;
+  font-weight: $weight-bold;
+  font-size: $text-3xl;
+  line-height: 1;
+}

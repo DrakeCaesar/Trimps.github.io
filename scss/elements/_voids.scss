@@ -1,0 +1,23 @@
+.voidMessage, 
+.voidBadge {
+  background: $purple-1000;
+  color: $purple-100;
+}
+
+.voidCell.cellColorNotBeaten {
+  background: $purple-1000;
+}
+#voidMapsBtn {
+  &:hover {
+    background: $purple-1000;
+    color: $purple-100;
+    opacity: 0.8;
+  }
+}
+
+#mapsBtn {
+  .alert {
+    background: $purple-1000;
+    color: $purple-100;
+  }
+}

@@ -15,16 +15,15 @@
 #battleSideTitle {
     border: 1px solid #212121
 }
+
 .battleCell {
     border: 1px solid #000;
-    margin-left: -1px;
-    margin-top: -1px;
-    color: #000;
-    
+    color: #000;  
 }
+
 #grid,
 #mapGrid {
-    background-color: #000;
+    background: #5D5D5D;
 }
 
 .cellColorOverkill {
@@ -421,7 +420,7 @@
 	color: black !important;
 }
 
-.cellColorNotBeaten, .postSpire ul li.cellColorNotBeaten {
+.postSpire ul li.cellColorNotBeaten {
 	background: #5D5D5D;
 }
 
@@ -1121,4 +1120,37 @@ color:#8F8F00
 
 #energyShield {
     background: linear-gradient(0deg, rgb(84, 41, 202) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 70%, rgb(84, 41, 202) 100%);
+}
+
+.alchemyPopupCraft.brew{
+	background-color: #182436;
+}
+
+.alchemyPopupCraft.potion{
+	background-color: #2d2e1d;
+}
+
+.alchemyCraftCost{
+	background-color: rgba(82, 82, 82, 0.5);
+}
+
+.autoRingSelect{
+	color: #C8C8C8;
+}
+
+.equalityTabScalingOff a{
+	background-color: #35341c !important;
+}
+.equalityTabScalingOff a:hover{
+	background-color: #222113 !important;
+}
+
+.equalityTabScalingOn a{
+	background-color: #1a1d3a !important;
+}
+.equalityTabScalingOn a:hover{
+	background-color: #0a0b18 !important;
+}
+#boneShrineBtn{
+	background-color: #5D5D5D;
 }
